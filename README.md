@@ -8,6 +8,7 @@ Just a funny and annoying puzzle series based on programming.
    
 - [Gmail](mailto:iamraviprakash1@gmail.com)
 - [Linkedin](https://www.linkedin.com/in/raja-ravi-prakash/)
+- [Discord](https://discord.gg/M3C9Xbv)
 
 ## License 📓📓📓📓
 
