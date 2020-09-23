@@ -1,0 +1,47 @@
+<div *ngIf="ok" class="fields">
+  <sl-card class="card-basic">
+    <div class="sample">
+      <div class="in" id="one">Input</div>
+      <div class="in" id="two">Output</div>
+    </div>
+    <br />
+    <div class="question">
+      <div class="in" id="oneq">Input</div>
+      <div class="out">
+        <sl-tooltip content="Enter your answer in hexcode with '#'">
+          <sl-input class="hexcode-input"></sl-input>
+        </sl-tooltip>
+        <sl-button (click)="go()">GO</sl-button>
+        <sl-button (click)="setColors()">Refresh Colors</sl-button>
+      </div>
+    </div>
+  </sl-card>
+</div>
+
+<sl-dialog label="Hint" class="dialog-hint">
+  <h3>
+    Guess the relation ship between the given two colors and find the related
+    one for below one and enter it's hexcode ( Note: if all the 3 colors are not
+    visible please click refresh colors button until all three colors are
+    visible )
+  </h3>
+</sl-dialog>
+
+<sl-dialog label="Result" class="dialog-win">
+  <img
+    width="400px"
+    src="https://media.giphy.com/media/2yxkSV0DXBwmtW39sh/giphy.gif"
+  />
+  <h3>
+    Not Bad! Big Brain. For you last stage you will be redirected to
+    <a href="https://thefinalstage5.herokuapp.com">this link</a>
+  </h3>
+  <sl-button (click)="fly()" slot="footer" type="primary">Close</sl-button>
+</sl-dialog>
+
+<sl-dialog label="Opps wrong one" class="dialog-wrong">
+  <img
+    style="width: 400px"
+    src="https://media.giphy.com/media/xVIkfXYGTJeZKilg3p/giphy.gif"
+  />
+</sl-dialog>

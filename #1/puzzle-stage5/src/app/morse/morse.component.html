@@ -1,0 +1,53 @@
+<div class="fields">
+  <sl-card class="card-header">
+    <div slot="header">
+      <h1>Final Stage</h1>
+    </div>
+    <sl-tooltip content="Use the audio bruhhh">
+      <sl-input class="answer-in" placeholder="Enter Your Answer"></sl-input>
+    </sl-tooltip>
+    <sl-button class="field" (click)="go()">GO</sl-button>
+    <sl-button class="field" (click)="play()">Hear Some Music!</sl-button><br />
+  </sl-card>
+</div>
+
+<sl-dialog label="Hint" class="dialog-hint">
+  <h3>
+    Due to some Technical Issues you can only complete this stage in Firefox, if
+    you are already using firefox ignore this.And you can only refresh this page
+    5 times per hour.If you refresh more than 5 , somethings won't work.
+  </h3>
+</sl-dialog>
+
+<sl-dialog label="Opps!" class="dialog-wrong">
+  <app-wrong></app-wrong>
+</sl-dialog>
+
+<sl-dialog label="Opps!" class="dialog-trap">
+  <h3>Got Yeah! now hear this annoying music.</h3>
+</sl-dialog>
+
+<sl-dialog label="Opps!" class="dialog-winner">
+  <sl-card class="card-overview">
+    <img
+      slot="image"
+      src="https://media.giphy.com/media/3o6ZtjUZAD5Lf0QFLW/giphy.gif"
+      alt="The Rock."
+    />
+
+    <strong>✨✨Congratulations✨✨</strong><br /><br />
+    Buddy you did it, You proved me wrong, Your response is recorded. if you are
+    the 1st one to be here you are the winner.ok well now go and enjoy the
+    music.<br />
+
+    <div slot="footer">
+      <sl-button type="primary" pill>
+        <a
+          style="text-decoration: none; color: white"
+          href="https://www.youtube.com/watch?v=42SM_TeWE5s"
+          >Ed Sheeran - BLOW (with Chris Stapleton & Bruno Mars)</a
+        ></sl-button
+      >
+    </div>
+  </sl-card>
+</sl-dialog>

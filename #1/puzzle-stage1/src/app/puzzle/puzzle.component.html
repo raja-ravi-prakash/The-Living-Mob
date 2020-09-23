@@ -1,0 +1,57 @@
+<div class="box">
+  <br />
+  <div class="field">4 - 1</div>
+  <br />
+  <div class="field">13 - 11</div>
+  <br />
+  <div class="field">20 - 5</div>
+  <br />
+  <div class="field">53 - 43</div>
+  <br />
+  <div class="field">21 - 21</div>
+  <br />
+  <div class="field">23 - 29</div>
+  <br />
+  <div class="field text">
+    The Above are Inputs and respective outputs find the logic and answer the
+    below one
+  </div>
+  <div class="field">
+    <sl-tooltip content="{{ answerHint }}">
+      <sl-input
+        class="answer-given"
+        size="large"
+        :value="{{ answer }}"
+        size="large"
+        placeholder="Enter you answer"
+      ></sl-input>
+    </sl-tooltip>
+    <sl-button (click)="go()">GO</sl-button>
+  </div>
+  <br />
+</div>
+
+<sl-dialog label="Question" class="dialog-no-overlay-dismiss">
+  {{ answerHint }}
+  <br />
+</sl-dialog>
+
+<sl-dialog label="Result" class="dialog-win">
+  <img
+    style="width: 400px"
+    src="https://media.giphy.com/media/QJsP0cTAJhg7O47ub2/giphy.gif"
+  />
+  <h4>
+    This is just the starting!!!, You Completed Stage1, for Stage2 you will be
+    redirected to another site which you already know, and by the way don't look
+    for simps they bite.
+  </h4>
+  <sl-button slot="footer" type="primary" (click)="fly()">GO</sl-button>
+</sl-dialog>
+
+<sl-dialog label="Opps wrong one" class="dialog-wrong">
+  <img
+    style="width: 400px"
+    src="https://media.giphy.com/media/3ohzdYJK1wAdPWVk88/source.gif"
+  />
+</sl-dialog>

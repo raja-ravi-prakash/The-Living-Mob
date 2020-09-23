@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "engineering-day-puzzle": {
+      "hosting": {
+        "puzzle": [
+          "engineering-day-puzzle"
+        ]
+      }
+    }
+  }
+}

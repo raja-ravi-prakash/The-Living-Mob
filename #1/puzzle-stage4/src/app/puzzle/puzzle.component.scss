@@ -1,0 +1,55 @@
+.fields {
+  position: fixed;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .sample {
+    display: flex;
+
+    .in {
+      margin: 10px;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      border: 5px solid grey;
+
+    }
+  }
+
+  .question {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    input {
+      padding: 5px;
+      margin: 5px;
+    }
+
+    sl-button {
+      padding: 5px;
+    }
+
+    .in {
+      width: 300px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      border: 5px solid grey;
+    }
+
+    .out {
+      margin: 15px;
+    }
+  }
+}
